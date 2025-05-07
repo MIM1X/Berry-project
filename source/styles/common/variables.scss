@@ -1,1 +1,18 @@
 /* здесь используйте глобальные переменные */
+
+$background-color-white: #FBFCFE;
+$background-color-blue-gray: #F1F6FC;
+$background-color-leaf-gray: fade-out(#8E9892, 0.7);
+
+$accent-color-purple: #6A107A;
+$accent-color-green: #0F805D;
+
+$text-color-black: #000000;
+$text-color-white: #FBFCFE;
+$text-color-leaf-gray: fade-out(#8E9892, 0.7);
+
+$purple-hover: #B22EC8;
+$purple-disabled: fade-out(#6A107A, 0.6);
+$green-hover: #7BDB0A;
+$green-disabled: fade-out(#0F805D, 0.5);
+$error-color: #FF8282;
