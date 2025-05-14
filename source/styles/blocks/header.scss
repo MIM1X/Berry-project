@@ -1,7 +1,10 @@
 .header {
+  $header-height:68px;
+
+  position: relative;
   display: flex;
   justify-content: center;
-  height: 68px;
+  height: $header-height;
   width: 100%;
   background-color: $background-color-blue-gray;
   box-shadow: 0 4px 4px 0 fade-out(#580D65, 0.75);
@@ -24,7 +27,7 @@
 
     @media (min-width: $tablet-width) {
       width: $tablet-width;
-      padding: 22px 59px 22px 25px;
+      padding: 22px 56px 22px 25px;
     }
 
     @media (min-width: $desktop-width) {
@@ -32,10 +35,6 @@
       padding: 24px 240px 24px 156px;
     }
   }
-
-  // &__logo {
-
-  // }
 
   &__toggle {
     position: relative;
@@ -99,13 +98,13 @@
     display: flex;
     justify-content: center;
 
-    @media (max-width: ($tablet-width - 1)) {
       &--opened {
         position: absolute;
-        top: 68px;
+        top: $header-height;
         left: 0;
         width: 100%;
         background-color: $background-color-blue-gray;
+        z-index: 1;
 
         // shadow
         &::before {
@@ -122,21 +121,32 @@
       &--closed {
         display: none;
       }
-    }
+
 
     @media (min-width: $tablet-width) {
       display: block;
       padding: 0;
+      position: static;
+      width: auto;
+      z-index: 0;
+
+      &::before{
+        content: none;
+      }
     }
   }
 
   &__nav-wrapper {
-    @media (max-width: $tablet-width) {
       width: $mobile-width;
       padding-top: 32px;
       padding-left: 40px;
       padding-bottom: 148px;
-    }
+
+      @media (min-width: $tablet-width) {
+        width: auto;
+        padding: 0;
+      }
+
   }
 
   &__list{
@@ -146,7 +156,7 @@
 
     @media (min-width: $tablet-width) {
       flex-direction: row;
-      gap: 45px;
+      gap: 46px;
     }
 
     @media (min-width: $desktop-width) {
