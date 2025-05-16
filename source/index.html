@@ -178,204 +178,226 @@
         </div>
       </section>
       <section class="catalog">
-        <h2 class="catalog__title title">Каталог</h2>
-        <ul class="catalog__list">
-          <li class="catalog__item">
-            <picture>
-              <source
-                type="image/webp"
-                srcset="./images/malina.webp 1x, ./images/malina@2x.webp 2x"
-              />
-              <img
-                src="./images/malina@1x.png"
-                srcset="./images/malina@2x.png 2x"
-                alt="Малина"
-                class="catalog__image"
-                width="264"
-                height="180"
-              />
-            </picture>
-            <h3 class="catalog__name title">Малина</h3>
-            <div class="catalog__price">
-              <span class="catalog__price-value">350 ₽</span>
-              <span class="catalog__price-unit">за 1 кг</span>
-            </div>
-            <button class="catalog__button button">Заказать</button>
-          </li>
+        <div class="catalog__container">
+          <h2 class="catalog__title">Каталог</h2>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/malina@1x.webp 1x,
+                    ./images/malina@2x.webp 2x
+                  "
+                />
+                <img
+                  src="./images/malina@1x.png"
+                  srcset="./images/malina@2x.png 2x"
+                  alt="Малина"
+                  class="catalog__image"
+                  width="264"
+                  height="180"
+                  loading="lazy"
+                />
+              </picture>
+              <h3 class="catalog__name">Малина</h3>
+              <div class="catalog__price">
+                <span class="catalog__price-value">350 ₽</span>
+                <span class="catalog__price-unit">за 1 кг</span>
+              </div>
+              <button class="catalog__button button">Заказать</button>
+            </li>
 
-          <li class="catalog__item">
-            <picture>
-              <source
-                type="image/webp"
-                srcset="./images/ezhevika.webp 1x, ./images/ezhevika@2x.webp 2x"
-              />
-              <img
-                src="./images/ezhevika@1x.png"
-                srcset="./images/ezhevika@2x.png 2x"
-                alt="Ежевика"
-                class="catalog__image"
-                width="264"
-                height="180"
-              />
-            </picture>
-            <h3 class="catalog__name title">Ежевика</h3>
-            <div class="catalog__price">
-              <span class="catalog__price-value">350 ₽</span>
-              <span class="catalog__price-unit">за 1 кг</span>
-            </div>
-            <button class="catalog__button button">Заказать</button>
-          </li>
+            <li class="catalog__item">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/ezhevika@1x.webp 1x,
+                    ./images/ezhevika@2x.webp 2x
+                  "
+                />
+                <img
+                  src="./images/ezhevika@1x.png"
+                  srcset="./images/ezhevika@2x.png 2x"
+                  alt="Ежевика"
+                  class="catalog__image"
+                  width="264"
+                  height="180"
+                  loading="lazy"
+                />
+              </picture>
+              <h3 class="catalog__name title">Ежевика</h3>
+              <div class="catalog__price">
+                <span class="catalog__price-value">350 ₽</span>
+                <span class="catalog__price-unit">за 1 кг</span>
+              </div>
+              <button class="catalog__button button">Заказать</button>
+            </li>
 
-          <li class="catalog__item">
-            <picture>
-              <source
-                type="image/webp"
-                srcset="
-                  ./images/brusnika@1x.webp 1x,
-                  ./images/brusnika@2x.webp 2x
-                "
-              />
-              <img
-                src="./images/brusnika@1x.png"
-                srcset="./images/brusnika@2x.png 2x"
-                alt="Брусника"
-                class="catalog__image"
-                width="264"
-                height="180"
-              />
-            </picture>
-            <h3 class="catalog__name title">Брусника</h3>
-            <div class="catalog__price">
-              <span class="catalog__price-value">350 ₽</span>
-              <span class="catalog__price-unit">за 1 кг</span>
-            </div>
-            <button class="catalog__button button">Заказать</button>
-          </li>
+            <li class="catalog__item">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/brusnika@1x.webp 1x,
+                    ./images/brusnika@2x.webp 2x
+                  "
+                />
+                <img
+                  src="./images/brusnika@1x.png"
+                  srcset="./images/brusnika@2x.png 2x"
+                  alt="Брусника"
+                  class="catalog__image"
+                  width="264"
+                  height="180"
+                  loading="lazy"
+                />
+              </picture>
+              <h3 class="catalog__name title">Брусника</h3>
+              <div class="catalog__price">
+                <span class="catalog__price-value">350 ₽</span>
+                <span class="catalog__price-unit">за 1 кг</span>
+              </div>
+              <button class="catalog__button button">Заказать</button>
+            </li>
 
-          <li class="catalog__item">
-            <picture>
-              <source
-                type="image/webp"
-                srcset="
-                  ./images/strawberry@1x.webp 1x,
-                  ./images/strawberry@2x.webp 2x
-                "
-              />
-              <img
-                src="./images/strawberry@1x.png"
-                srcset="./images/strawberry@2x.png 2x"
-                alt="Клубника"
-                class="catalog__image"
-                width="264"
-                height="180"
-              />
-            </picture>
-            <h3 class="catalog__name title">Клубника</h3>
-            <div class="catalog__price">
-              <span class="catalog__price-value">350 ₽</span>
-              <span class="catalog__price-unit">за 1 кг</span>
-            </div>
-            <button class="catalog__button button">Заказать</button>
-          </li>
+            <li class="catalog__item">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/strawberry@1x.webp 1x,
+                    ./images/strawberry@2x.webp 2x
+                  "
+                />
+                <img
+                  src="./images/strawberry@1x.png"
+                  srcset="./images/strawberry@2x.png 2x"
+                  alt="Клубника"
+                  class="catalog__image"
+                  width="264"
+                  height="180"
+                  loading="lazy"
+                />
+              </picture>
+              <h3 class="catalog__name title">Клубника</h3>
+              <div class="catalog__price">
+                <span class="catalog__price-value">350 ₽</span>
+                <span class="catalog__price-unit">за 1 кг</span>
+              </div>
+              <button class="catalog__button button">Заказать</button>
+            </li>
 
-          <li class="catalog__item">
-            <picture>
-              <source
-                type="image/webp"
-                srcset="./images/cherry@1x.webp 1x, ./images/cherry@2x.webp 2x"
-              />
-              <img
-                src="./images/cherry@1x.png"
-                srcset="./images/cherry@2x.png 2x"
-                alt="Вишня"
-                class="catalog__image"
-                width="264"
-                height="180"
-              />
-            </picture>
-            <h3 class="catalog__name title">Вишня</h3>
-            <div class="catalog__price">
-              <span class="catalog__price-value">350 ₽</span>
-              <span class="catalog__price-unit">за 1 кг</span>
-            </div>
-            <button class="catalog__button button">Заказать</button>
-          </li>
+            <li class="catalog__item">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/cherry@1x.webp 1x,
+                    ./images/cherry@2x.webp 2x
+                  "
+                />
+                <img
+                  src="./images/cherry@1x.png"
+                  srcset="./images/cherry@2x.png 2x"
+                  alt="Вишня"
+                  class="catalog__image"
+                  width="264"
+                  height="180"
+                  loading="lazy"
+                />
+              </picture>
+              <h3 class="catalog__name title">Вишня</h3>
+              <div class="catalog__price">
+                <span class="catalog__price-value">350 ₽</span>
+                <span class="catalog__price-unit">за 1 кг</span>
+              </div>
+              <button class="catalog__button button">Заказать</button>
+            </li>
 
-          <li class="catalog__item">
-            <picture>
-              <source
-                type="image/webp"
-                srcset="
-                  ./images/kryzhovnik@1x.webp 1x,
-                  ./images/kryzhovnik@2x.webp 2x
-                "
-              />
-              <img
-                src="./images/kryzhovnik@1x.png"
-                srcset="./images/kryzhovnik@2x.png 2x"
-                alt="Крыжовник"
-                class="catalog__image"
-                width="264"
-                height="180"
-              />
-            </picture>
-            <h3 class="catalog__name title">Крыжовник</h3>
-            <div class="catalog__price">
-              <span class="catalog__price-value">350 ₽</span>
-              <span class="catalog__price-unit">за 1 кг</span>
-            </div>
-            <button class="catalog__button button">Заказать</button>
-          </li>
+            <li class="catalog__item">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/kryzhovnik@1x.webp 1x,
+                    ./images/kryzhovnik@2x.webp 2x
+                  "
+                />
+                <img
+                  src="./images/kryzhovnik@1x.png"
+                  srcset="./images/kryzhovnik@2x.png 2x"
+                  alt="Крыжовник"
+                  class="catalog__image"
+                  width="264"
+                  height="180"
+                  loading="lazy"
+                />
+              </picture>
+              <h3 class="catalog__name title">Крыжовник</h3>
+              <div class="catalog__price">
+                <span class="catalog__price-value">350 ₽</span>
+                <span class="catalog__price-unit">за 1 кг</span>
+              </div>
+              <button class="catalog__button button">Заказать</button>
+            </li>
 
-          <li class="catalog__item">
-            <picture>
-              <source
-                type="image/webp"
-                srcset="
-                  ./images/blueberry@1x.webp 1x,
-                  ./images/blueberry@2x.webp 2x
-                "
-              />
-              <img
-                src="./images/blueberry@1x.png"
-                srcset="./images/blueberry@2x.png 2x"
-                alt="Голубика"
-                class="catalog__image"
-                width="264"
-                height="180"
-              />
-            </picture>
-            <h3 class="catalog__name title">Голубика</h3>
-            <div class="catalog__price">
-              <span class="catalog__price-value">350 ₽</span>
-              <span class="catalog__price-unit">за 1 кг</span>
-            </div>
-            <button class="catalog__button button">Заказать</button>
-          </li>
+            <li class="catalog__item">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/blueberry@1x.webp 1x,
+                    ./images/blueberry@2x.webp 2x
+                  "
+                />
+                <img
+                  src="./images/blueberry@1x.png"
+                  srcset="./images/blueberry@2x.png 2x"
+                  alt="Голубика"
+                  class="catalog__image"
+                  width="264"
+                  height="180"
+                  loading="lazy"
+                />
+              </picture>
+              <h3 class="catalog__name title">Голубика</h3>
+              <div class="catalog__price">
+                <span class="catalog__price-value">350 ₽</span>
+                <span class="catalog__price-unit">за 1 кг</span>
+              </div>
+              <button class="catalog__button button">Заказать</button>
+            </li>
 
-          <li class="catalog__item">
-            <picture>
-              <source
-                type="image/webp"
-                srcset="./images/klukva@1x.webp 1x, ./images/klukva@2x.webp 2x"
-              />
-              <img
-                src="./images/klukva@1x.png"
-                srcset="./images/klukva@2x.png 2x"
-                alt="Клюква"
-                class="catalog__image"
-                width="264"
-                height="180"
-              />
-            </picture>
-            <h3 class="catalog__name title">Клюква</h3>
-            <div class="catalog__price">
-              <span class="catalog__price-value">350 ₽</span>
-              <span class="catalog__price-unit">за 1 кг</span>
-            </div>
-            <button class="catalog__button button">Заказать</button>
-          </li>
-        </ul>
+            <li class="catalog__item">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/klukva@1x.webp 1x,
+                    ./images/klukva@2x.webp 2x
+                  "
+                />
+                <img
+                  src="./images/klukva@1x.png"
+                  srcset="./images/klukva@2x.png 2x"
+                  alt="Клюква"
+                  class="catalog__image"
+                  width="264"
+                  height="180"
+                  loading="lazy"
+                />
+              </picture>
+              <h3 class="catalog__name title">Клюква</h3>
+              <div class="catalog__price">
+                <span class="catalog__price-value">350 ₽</span>
+                <span class="catalog__price-unit">за 1 кг</span>
+              </div>
+              <button class="catalog__button button">Заказать</button>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="news">
         <img
@@ -384,6 +406,7 @@
           width="228"
           height="32"
           draggable="false"
+          loading="lazy"
         />
         <h2 class="news__title title">Что новенького?</h2>
         <ul class="news__list">
@@ -402,6 +425,7 @@
               width="76"
               height="32"
               draggable="false"
+              loading="lazy"
             />
           </li>
 
@@ -420,6 +444,7 @@
               width="76"
               height="32"
               draggable="false"
+              loading="lazy"
             />
           </li>
 
@@ -438,11 +463,20 @@
               width="76"
               height="32"
               draggable="false"
+              loading="lazy"
             />
           </li>
         </ul>
       </section>
       <article class="contacts">
+        <img
+          src="./images/double-stick.svg"
+          class="news__decoration"
+          width="228"
+          height="32"
+          draggable="false"
+          loading="lazy"
+        />
         <h2 class="contacts__title title">Где забирать ягоды?</h2>
         <p class="contacts__text text">
           Забери ягоды с нашего склада по адресу:
@@ -546,7 +580,11 @@
         </ul>
       </nav>
       <div class="footer__academy academy">
-        <a href="https://htmlacademy.ru" class="academy__logo">HTML Academy</a>
+        <a
+          href="https://htmlacademy.ru/intensive/adaptive"
+          class="academy__logo"
+          >HTML Academy</a
+        >
       </div>
     </footer>
   </body>
