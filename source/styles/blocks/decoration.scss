@@ -1,0 +1,9 @@
+.decoration {
+  width: 228px;
+  height: 32px;
+
+  @media (min-width: $tablet-width) {
+    width: 296px;
+    height: 42px;
+  }
+}

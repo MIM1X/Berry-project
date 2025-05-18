@@ -403,17 +403,18 @@
         <div class="news__container">
           <img
             src="./images/double-stick.svg"
-            class="news__decoration"
+            class="news__decoration decoration"
             width="228"
             height="32"
             draggable="false"
             loading="lazy"
+            alt="---^---"
           />
           <h2 class="news__title">Что новенького?</h2>
           <ul class="news__list">
             <li class="news__item">
               <h3 class="news__name">Новый урожай клубники</h3>
-              <p class="news__text text">
+              <p class="news__text">
                 К нам поступила свежая сочная ароматная клубника из Алтайского
                 края. Крупные отборные ягоды можно приобрести свежими от 200 гр,
                 или замороженными от 1 кг. Поторопитесь, сезон клубники короткий
@@ -427,6 +428,7 @@
                 height="32"
                 draggable="false"
                 loading="lazy"
+                alt="--^--"
               />
             </li>
 
@@ -446,6 +448,7 @@
                 height="32"
                 draggable="false"
                 loading="lazy"
+                alt="--^--"
               />
             </li>
 
@@ -466,6 +469,7 @@
                 height="32"
                 draggable="false"
                 loading="lazy"
+                alt="--^--"
               />
             </li>
           </ul>
@@ -475,38 +479,45 @@
         <div class="contacts__container">
           <img
             src="./images/double-stick.svg"
-            class="news__decoration"
+            class="contacts__decoration decoration"
             width="228"
             height="32"
             draggable="false"
             loading="lazy"
+            alt="---^---"
           />
-          <h2 class="contacts__title title">Где забирать ягоды?</h2>
-          <p class="contacts__text text">
-            Забери ягоды с нашего склада по адресу:
-          </p>
-          <address class="contacts__address">
-            <ul class="contacts__list">
-              <li class="contacts__item">Набережная Обводного канала, 101</li>
-              <li class="contacts__item">
-                <a href="tel:+79105244118" class="contacts__phone"
-                  >+ 7 910 524 41 18
-                </a>
-              </li>
-              <li class="contacts__item">
-                <a href="mailto:info@yagoda.ru" class="contacts__email">
-                  info@yagoda.ru
-                </a>
-              </li>
-            </ul>
-          </address>
+          <div class="contacts__text-container">
+            <h2 class="contacts__title">Где забрать ягоды?</h2>
+            <p class="contacts__text">
+              Забери ягоды с нашего склада<br />
+              по адресу:
+            </p>
+            <address class="contacts__address">
+              <ul class="contacts__list">
+                <li class="contacts__item">Набережная Обводного канала, 101</li>
+                <li class="contacts__item">
+                  <a href="tel:+79105244118" class="contacts__phone"
+                    >+ 7 910 524 41 18
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a href="mailto:info@yagoda.ru" class="contacts__email">
+                    info@yagoda.ru
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="contacts__map">
+            <iframe
+              title="map-widget"
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad146dc8e76ac6f3e896e089921ea3ed5f7dee72605cc46ee20e8450993379db9&amp;source=constructor"
+              width="100%"
+              height="372"
+              frameborder="0"
+            ></iframe>
+          </div>
         </div>
-        <iframe
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad146dc8e76ac6f3e896e089921ea3ed5f7dee72605cc46ee20e8450993379db9&amp;source=constructor"
-          width="100%"
-          height="372"
-          frameborder="0"
-        ></iframe>
       </section>
     </main>
     <footer class="footer">
