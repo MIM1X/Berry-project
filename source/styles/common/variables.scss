@@ -6,40 +6,39 @@ $tablet-width: 768px;
 $desktop-width: 1440px;
 
 /* colors */
-$background-color-white: #FBFCFE;
-$background-color-blue-gray: #F1F6FC;
-$background-color-leaf-gray: fade-out(#8E9892, 0.7);
+$background-color-white: #fbfcfe;
+$background-color-blue-gray: #f1f6fc;
+$background-color-leaf-gray: fade-out(#8e9892, 0.7);
 
-$accent-color-purple: #6A107A;
-$accent-color-green: #0F805D;
+$accent-color-purple: #6a107a;
+$accent-color-green: #0f805d;
 
 $text-color-black: #000000;
-$text-color-white: #FBFCFE;
-$text-color-leaf-gray: fade-out(#8E9892, 0.7);
+$text-color-white: #fbfcfe;
+$text-color-leaf-gray: fade-out(#8e9892, 0.7);
 
-$purple-hover: #B22EC8;
-$purple-disabled: fade-out(#6A107A, 0.6);
-$green-hover: #7BDB0A;
-$green-disabled: fade-out(#0F805D, 0.5);
-$error-color: #FF8282;
+$purple-hover: #b22ec8;
+$purple-disabled: fade-out(#6a107a, 0.6);
+$green-hover: #7bdb0a;
+$green-disabled: fade-out(#0f805d, 0.5);
+$error-color: #ff8282;
 
 /* fonts */
-$h1-font:400 52px "Comfortaa";
-$h1-tablet-font:400 48px "Comfortaa";
-$h1-mobile-font:400 36px "Comfortaa";
+$h1-font: 400 52px "Comfortaa";
+$h1-tablet-font: 400 48px "Comfortaa";
+$h1-mobile-font: 400 36px "Comfortaa";
 
-$h2-font:400 52px "Comfortaa";
-$h2-tablet-font:400 48px "Comfortaa";
-$h2-mobile-font:400 36px "Comfortaa";
+$h2-font: 400 52px "Comfortaa";
+$h2-tablet-font: 400 48px "Comfortaa";
+$h2-mobile-font: 400 36px "Comfortaa";
 
-$h3-font:400 28px "Raleway";
-$h3-mobile-font:400 20px "Raleway";
+$h3-font: 400 28px "Raleway";
+$h3-mobile-font: 400 20px "Raleway";
 
-$link-font:400 20px "Raleway";
+$link-font: 400 20px "Raleway";
 
-$big-accent-font:400 18px/22px "Raleway"; //body1
-$big-accent-mobile-font:400 16px "Raleway"; //mobBody1
+$big-accent-font: 400 18px/22px "Raleway"; //body1
+$big-accent-mobile-font: 400 16px "Raleway"; //mobBody1
 
-$text-font:400 16px/20px "Raleway"; //body2
-$text-mobile-font:400 14px "Raleway"; //mobBody2
-
+$text-font: 400 16px/20px "Raleway"; //body2
+$text-mobile-font: 400 14px "Raleway"; //mobBody2
