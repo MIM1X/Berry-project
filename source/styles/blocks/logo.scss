@@ -1,6 +1,17 @@
 .logo {
   display: inline-block;
   line-height: 0;
+  cursor: pointer;
+
+  color: $accent-color-green;
+
+  &:hover,
+  &:focus {
+    color: $green-hover;
+  }
+  &:active {
+    color: $green-disabled;
+  }
 
   & svg {
     display: block;

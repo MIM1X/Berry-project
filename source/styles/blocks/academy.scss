@@ -1,0 +1,30 @@
+.academy {
+  display: flex;
+
+  font: 400 11px "Raleway";
+
+  @media (min-width: $tablet-width) {
+    font: 400 16px "Raleway";
+  }
+
+  & a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  & a::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 24px;
+    background: currentColor;
+    mask-image: url("../../images/htmlacademy.svg");
+    mask-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 26px;
+      height: 32px;
+    }
+  }
+}

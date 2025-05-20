@@ -7,7 +7,8 @@
   font: $h3-mobile-font;
   letter-spacing: 0.05em;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $purple-hover;
   }
 
@@ -28,6 +29,6 @@
   }
 
   &.button--shadow {
-    box-shadow: 0 4px 4px 0 fade-out(#580D65, 0.75);
+    box-shadow: 0 4px 4px 0 fade-out(#580d65, 0.75);
   }
 }

@@ -1,0 +1,136 @@
+.footer {
+  display: flex;
+  justify-content: center;
+
+  background-color: $background-color-blue-gray;
+
+  margin-top: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 96px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 80px;
+  }
+
+  &__container {
+    display: grid;
+    grid-row-gap: 9px;
+    grid-template-areas:
+      "logo social"
+      ". academy";
+
+    width: 320px;
+
+    padding: 11px 26px 20px;
+
+    @media (min-width: $tablet-width) {
+      grid-template-areas: "logo social academy";
+      grid-template-columns: 250px 1fr 250px;
+
+      width: 768px;
+
+      padding: 22px 26px 22px 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1440px;
+
+      padding: 24px 159px 24px 156px;
+    }
+  }
+
+  &__logo {
+    grid-area: logo;
+  }
+
+  &__social {
+    grid-area: social;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 10px;
+      padding-left: 19px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 2px;
+    }
+  }
+
+  &__list {
+    height: 100%;
+
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    align-items: center;
+
+    padding-bottom: 2px;
+
+    @media (min-width: $tablet-width) {
+      justify-content: center;
+      gap: 32px;
+    }
+  }
+
+  // &__item {
+  //   color: $accent-color-green;
+
+  //   &::hover {
+  //     color: $green-hover;
+  //   }
+  // }
+
+  &__item a {
+    display: block;
+    width: 32px;
+    height: 32px;
+
+    color: $accent-color-green;
+
+    &:focus,
+    &:hover {
+      color: $green-hover;
+    }
+
+    &:active {
+      color: $green-disabled;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__item:nth-of-type(1) a {
+    background: currentColor;
+    mask-image: url("../../images/telegram.svg");
+  }
+
+  &__item:nth-of-type(2) a {
+    background: currentColor;
+    mask-image: url("../../images/vkontakte.svg");
+  }
+
+  &__item:nth-of-type(3) a {
+    background: currentColor;
+    mask-image: url("../../images/youtube.svg");
+  }
+
+  &__academy {
+    grid-area: academy;
+
+    justify-content: right;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 6px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 4px;
+    }
+  }
+}
