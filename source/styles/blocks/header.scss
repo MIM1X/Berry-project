@@ -10,11 +10,11 @@
   box-shadow: 0 4px 4px 0 fade-out(#580d65, 0.75);
 
   @media (min-width: $tablet-width) {
-    height: 104px;
+    min-height: 104px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 108px;
+    min-height: 108px;
   }
 
   &__container {
@@ -188,6 +188,12 @@
       }
       &:active {
         color: $green-disabled;
+      }
+    }
+
+    &--current {
+      a {
+        color: $accent-color-green;
       }
     }
   }

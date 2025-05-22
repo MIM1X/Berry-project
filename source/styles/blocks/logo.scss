@@ -18,6 +18,10 @@
     height: 60px;
   }
 
+  &:visited {
+    color: $accent-color-green;
+  }
+
   &:hover,
   &:focus {
     color: $green-hover;
