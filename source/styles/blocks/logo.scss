@@ -3,7 +3,20 @@
   line-height: 0;
   cursor: pointer;
 
+  width: 52px;
+  height: 52px;
+
   color: $accent-color-green;
+
+  @media (min-width: $tablet-width) {
+    width: 133px;
+    height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 135px;
+    height: 60px;
+  }
 
   &:hover,
   &:focus {

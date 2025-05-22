@@ -4,7 +4,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  height: $header-height;
+  min-height: $header-height;
   width: 100%;
   background-color: $background-color-blue-gray;
   box-shadow: 0 4px 4px 0 fade-out(#580d65, 0.75);
@@ -44,6 +44,10 @@
     &:hover,
     &:focus {
       color: $green-hover;
+    }
+
+    &--nojs {
+      display: none;
     }
 
     //burger
@@ -105,6 +109,10 @@
     display: flex;
     justify-content: center;
 
+    &--nojs {
+      position: relative;
+    }
+
     &--opened {
       position: absolute;
       top: $header-height;
@@ -125,8 +133,10 @@
       }
     }
 
-    &--closed {
-      display: none;
+    @media (max-width: ($tablet-width - 1)) {
+      &--closed:not(&--nojs) {
+        display: none;
+      }
     }
 
     @media (min-width: $tablet-width) {

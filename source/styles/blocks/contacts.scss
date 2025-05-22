@@ -117,7 +117,19 @@
     font: $text-mobile-font;
     color: $text-color-black;
 
-    &:not(:first-of-type) {
+    @media (min-width: $tablet-width) {
+      font: $text-font;
+    }
+
+    &::before {
+      flex-shrink: 0;
+    }
+
+    & a {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
       &:hover,
       &:focus {
         color: $green-hover;
@@ -125,14 +137,6 @@
       &:active {
         color: $green-disabled;
       }
-    }
-
-    @media (min-width: $tablet-width) {
-      font: $text-font;
-    }
-
-    &::before {
-      flex-shrink: 0;
     }
   }
 
@@ -145,7 +149,7 @@
     mask-image: url("../../icons/icon-leaf.svg");
   }
 
-  &__item:nth-of-type(2)::before {
+  &__item:nth-of-type(2) a::before {
     content: "";
     width: 32px;
     height: 32px;
@@ -154,7 +158,7 @@
     mask-image: url("../../icons/icon-call.svg");
   }
 
-  &__item:nth-of-type(3)::before {
+  &__item:nth-of-type(3) a::before {
     content: "";
     width: 32px;
     height: 32px;

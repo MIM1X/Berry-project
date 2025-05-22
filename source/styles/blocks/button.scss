@@ -1,11 +1,20 @@
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 220px;
   height: 52px;
   border-radius: 40px;
   background-color: $accent-color-purple;
-  color: $text-color-white;
   font: $h3-mobile-font;
   letter-spacing: 0.05em;
+  cursor: pointer;
+  user-select: none;
+  color: $text-color-white;
+
+  &:visited {
+    color: $text-color-white;
+  }
 
   &:hover,
   &:focus {

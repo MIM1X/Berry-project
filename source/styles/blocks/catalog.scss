@@ -71,6 +71,12 @@
     box-shadow: 0 4px 4px 0 fade-out(#580d65, 0.85);
 
     padding-bottom: 54px;
+
+    & a:first-of-type {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__name {
