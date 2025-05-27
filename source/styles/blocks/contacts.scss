@@ -192,5 +192,11 @@
         margin-bottom: 72px;
       }
     }
+
+    @media (min-width: $desktop-width) {
+      .contacts__title {
+        margin-top: 0;
+      }
+    }
   }
 }

@@ -17,6 +17,10 @@
     @media (min-width: $tablet-width) {
       width: 624;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 792px;
+    }
   }
 
   &__title {
@@ -29,6 +33,10 @@
 
     @media (min-width: $tablet-width) {
       font: $h1-tablet-font;
+    }
+
+    @media (min-width: $desktop-width) {
+      font: $h1-font;
     }
   }
 
@@ -48,6 +56,13 @@
       font: $big-accent-font;
       width: 480px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 47px;
+
+      font: $big-accent-font;
+      width: 550px;
+    }
   }
 
   &__form {
@@ -56,6 +71,10 @@
     @media (min-width: $tablet-width) {
       margin-top: 73px;
       width: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 62px;
     }
   }
 
@@ -71,13 +90,33 @@
         text-align: center;
       }
     }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+
+      &:last-of-type {
+        text-align: left;
+      }
+    }
   }
 
   &__list {
     margin-top: 40.5px;
     margin-bottom: 50px;
 
-    padding: 0 70px;
+    @media (min-width: $tablet-width) {
+      margin-top: 40.5px;
+      margin-bottom: 50px;
+
+      padding: 0 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 48.5px;
+      margin-bottom: 58px;
+
+      padding: 0;
+    }
   }
 
   //chbox1
@@ -98,6 +137,14 @@
 
       grid-template-columns: minmax(134px, auto) 1fr 1fr;
       grid-template-rows: repeat(4, auto);
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-row-gap: 24px;
+      grid-column-gap: 48px;
+
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(2, 1fr);
     }
   }
 
@@ -120,6 +167,17 @@
       justify-content: space-between;
 
       column-gap: 13px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 47px;
+      margin-bottom: 48.5px;
+
+      height: min-content;
+
+      flex-direction: row;
+      justify-content: left;
+      gap: 49px;
     }
   }
 
@@ -147,6 +205,30 @@
 
       .order__item:last-of-type {
         width: 255px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      justify-content: left;
+
+      margin-top: 48px;
+      margin-bottom: 45px;
+
+      gap: 50px;
+
+      .order__item:first-of-type {
+        padding-left: 1.5px;
+        & br:not(:nth-of-type(1)) {
+          display: none;
+        }
+      }
+
+      .order__item:last-of-type {
+        width: max-content;
+
+        & br:not(:nth-of-type(1)) {
+          display: none;
+        }
       }
     }
 
@@ -215,6 +297,13 @@
       & .order__item:nth-of-type(5) {
         grid-area: wish;
       }
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 624px;
+
+      margin-top: 50px;
+      margin-bottom: 47.5px;
     }
   }
 
