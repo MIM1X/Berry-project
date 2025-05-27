@@ -334,6 +334,8 @@
     @media (min-width: $tablet-width) {
       min-height: 0;
       height: 52px;
+
+      overflow: hidden;
     }
   }
 
