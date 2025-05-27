@@ -12,6 +12,7 @@
   user-select: none;
   color: $text-color-white;
 
+  &:link,
   &:visited {
     color: $text-color-white;
   }

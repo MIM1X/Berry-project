@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <title>Ягода - Форма заказа</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="🍓 Купите свежие, сочные и вкусные ягоды с доставкой! Клубника, малина, черника, голубика и другие ягоды от проверенных фермеров. Наслаждайтесь натуральным вкусом и пользой – заказывайте онлайн!"
+    />
     <link
       rel="preload"
       href="fonts/Comfortaa/Comfortaa-VariableFont_wght.woff2"
@@ -25,7 +29,11 @@
   <body class="page__body">
     <header class="header">
       <div class="header__container">
-        <a class="header__logo logo" href="index.html">
+        <a
+          class="header__logo logo"
+          href="index.html"
+          aria-label="Вернуться на главную страницу"
+        >
           <svg
             width="52"
             height="52"
@@ -151,6 +159,7 @@
         </a>
         <button
           class="header__toggle header__toggle--nojs header__toggle--closed"
+          aria-label="Открыть или закрыть меню навигации"
         ></button>
         <nav class="header__nav header__nav--nojs header__nav--closed">
           <div class="header__nav-wrapper">
@@ -248,7 +257,7 @@
             autocomplete="on"
             enctype="application/x-www-form-urlencoded"
           >
-            <h3 class="order__caption">Выберите ягоды</h3>
+            <h2 class="order__caption">Выберите ягоды</h2>
             <ul class="order__list">
               <li class="order__item">
                 <label class="order__label">
@@ -550,7 +559,11 @@
     </main>
     <footer class="footer footer--page-form">
       <div class="footer__container">
-        <a class="footer__logo logo" href="index.html">
+        <a
+          class="footer__logo logo"
+          href="index.html"
+          aria-label="Вернуться на главную страницу"
+        >
           <svg
             width="52"
             height="52"
