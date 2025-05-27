@@ -178,9 +178,19 @@
 
   &.contacts--page-form {
     margin-top: 89px;
+
     .contacts__title {
       margin-top: 60px;
       margin-bottom: 63px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-top: 100px;
+
+      .contacts__title {
+        margin-top: 74px;
+        margin-bottom: 72px;
+      }
     }
   }
 }

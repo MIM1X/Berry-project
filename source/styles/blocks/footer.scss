@@ -128,5 +128,13 @@
 
   &.footer--page-form {
     margin-top: 61px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 96px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 80px;
+    }
   }
 }

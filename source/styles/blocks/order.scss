@@ -4,11 +4,19 @@
 
   margin-top: 63px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 101px;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 268px;
+
+    @media (min-width: $tablet-width) {
+      width: 624;
+    }
   }
 
   &__title {
@@ -18,6 +26,10 @@
 
     font: $h1-mobile-font;
     color: $accent-color-green;
+
+    @media (min-width: $tablet-width) {
+      font: $h1-tablet-font;
+    }
   }
 
   &__subtitle {
@@ -28,20 +40,44 @@
 
     margin-top: 32px;
     margin-bottom: 41px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 24px;
+      margin-bottom: 36px;
+
+      font: $big-accent-font;
+      width: 480px;
+    }
   }
 
   &__form {
     margin-top: 50px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 73px;
+      width: 100%;
+    }
   }
 
   &__caption {
     font: $h3-mobile-font;
     color: $accent-color-green;
+
+    @media (min-width: $tablet-width) {
+      font: $h3-font;
+      padding: 0 70px;
+
+      &:last-of-type {
+        text-align: center;
+      }
+    }
   }
 
   &__list {
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin-top: 40.5px;
+    margin-bottom: 50px;
+
+    padding: 0 70px;
   }
 
   //chbox1
@@ -55,6 +91,14 @@
     grid-column-gap: 20px;
 
     text-transform: lowercase;
+
+    @media (min-width: $tablet-width) {
+      grid-row-gap: 24px;
+      grid-column-gap: 50px;
+
+      grid-template-columns: minmax(134px, auto) 1fr 1fr;
+      grid-template-rows: repeat(4, auto);
+    }
   }
 
   //chbox2
@@ -64,6 +108,19 @@
     gap: 23px;
 
     text-transform: lowercase;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 40px;
+      margin-bottom: 48px;
+
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: 72px;
+      flex-flow: column wrap;
+      justify-content: space-between;
+
+      column-gap: 13px;
+    }
   }
 
   //radio-button
@@ -73,6 +130,25 @@
     gap: 31px;
     padding-left: 2px;
     margin-top: 31px;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+
+      // padding-left: 71.5px;
+      padding: 0;
+      justify-content: center;
+      margin-top: 40.5px;
+      margin-bottom: 45px;
+      gap: 27px;
+
+      .order__item:first-of-type {
+        padding-left: 3px;
+      }
+
+      .order__item:last-of-type {
+        width: 255px;
+      }
+    }
 
     & .order__label {
       gap: 13px;
@@ -101,10 +177,53 @@
 
       font: $text-mobile-font;
     }
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+
+      grid-column-gap: 24px;
+      grid-row-gap: 36px;
+
+      grid-template-areas:
+        "name ."
+        "phone email"
+        "address address"
+        "wish wish";
+
+      margin-top: 40.5px;
+      margin-bottom: 40px;
+
+      padding: 0;
+      font: $text-font;
+
+      & .order__label {
+        font: $text-font;
+      }
+
+      & .order__item:nth-of-type(1) {
+        grid-area: name;
+      }
+      & .order__item:nth-of-type(2) {
+        grid-area: phone;
+      }
+      & .order__item:nth-of-type(3) {
+        grid-area: email;
+      }
+      & .order__item:nth-of-type(4) {
+        grid-area: address;
+      }
+      & .order__item:nth-of-type(5) {
+        grid-area: wish;
+      }
+    }
   }
 
   &__item {
     font: $big-accent-mobile-font;
+
+    @media (min-width: $tablet-width) {
+      font: $big-accent-font;
+    }
 
     & span {
       color: $error-color;
@@ -122,15 +241,33 @@
   &__input[name="address"] {
     min-height: 88px;
     resize: none;
+
+    @media (min-width: $tablet-width) {
+      min-height: 0;
+      height: 52px;
+    }
   }
 
   &__input[name="comment"] {
     min-height: 124px;
     resize: none;
+
+    @media (min-width: $tablet-width) {
+      min-height: 144px;
+    }
   }
 
   &__button {
     margin-left: auto;
     margin-right: auto;
+
+    @media (min-width: $tablet-width) {
+      &.button--big {
+        width: 336px;
+        height: 68px;
+
+        font: $h3-font;
+      }
+    }
   }
 }
