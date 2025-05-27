@@ -1,0 +1,43 @@
+.radio-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  color: $accent-color-green;
+
+  appearance: none;
+  position: relative;
+  width: 21px;
+  height: 21px;
+  background: transparent;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background-color: currentColor;
+  }
+
+  &:checked::after {
+    width: 9px;
+    height: 9px;
+  }
+
+  &:focus {
+    box-shadow: inset 0 0 2px $text-color-black;
+  }
+
+  &:hover {
+    color: $green-hover;
+  }
+
+  &:disabled {
+    color: $text-color-leaf-gray;
+  }
+}

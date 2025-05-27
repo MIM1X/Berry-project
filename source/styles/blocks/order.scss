@@ -1,0 +1,136 @@
+.order {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 63px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 268px;
+  }
+
+  &__title {
+    height: 80px;
+
+    text-align: center;
+
+    font: $h1-mobile-font;
+    color: $accent-color-green;
+  }
+
+  &__subtitle {
+    text-align: center;
+
+    font: $big-accent-mobile-font;
+    color: $text-color-black;
+
+    margin-top: 32px;
+    margin-bottom: 41px;
+  }
+
+  &__form {
+    margin-top: 50px;
+  }
+
+  &__caption {
+    font: $h3-mobile-font;
+    color: $accent-color-green;
+  }
+
+  &__list {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  //chbox1
+  &__list:first-of-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-auto-flow: column;
+
+    grid-row-gap: 32px;
+    grid-column-gap: 20px;
+
+    text-transform: lowercase;
+  }
+
+  //chbox2
+  &__list:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+
+    text-transform: lowercase;
+  }
+
+  //radio-button
+  &__list:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    padding-left: 2px;
+    margin-top: 31px;
+
+    & .order__label {
+      gap: 13px;
+    }
+  }
+
+  //inputs
+  &__list:last-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: 35.5px;
+
+    margin-top: 31px;
+    margin-bottom: 35.5px;
+
+    line-height: 0;
+
+    & .order__item {
+      line-height: 0;
+    }
+
+    & .order__label {
+      padding-left: 11.5px;
+      gap: 4px;
+      margin-bottom: 4px;
+
+      font: $text-mobile-font;
+    }
+  }
+
+  &__item {
+    font: $big-accent-mobile-font;
+
+    & span {
+      color: $error-color;
+
+      font: $text-font;
+    }
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__input[name="address"] {
+    min-height: 88px;
+    resize: none;
+  }
+
+  &__input[name="comment"] {
+    min-height: 124px;
+    resize: none;
+  }
+
+  &__button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

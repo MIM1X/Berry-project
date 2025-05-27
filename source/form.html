@@ -245,49 +245,265 @@
             class="order__form form"
             method="post"
             action="https://echo.htmlacademy.ru/"
+            autocomplete="on"
+            enctype="application/x-www-form-urlencoded"
           >
             <h3 class="order__caption">Выберите ягоды</h3>
             <ul class="order__list">
-              <li class="order__item">Брусника</li>
-              <li class="order__item">Вишня</li>
-              <li class="order__item">Голубика</li>
-              <li class="order__item">Ежевика</li>
-              <li class="order__item">клубника</li>
-              <li class="order__item">Клюква</li>
-              <li class="order__item">Крыжовник</li>
-              <li class="order__item">Малина</li>
-              <li class="order__item">морошка</li>
-              <li class="order__item">черника</li>
+              <li class="order__item">
+                <label class="order__label">
+                  <input
+                    class="order__checkbox checkbox"
+                    type="checkbox"
+                    value="brusnika"
+                    name="berry"
+                  />
+                  Брусника
+                </label>
+              </li>
+              <li class="order__item">
+                <label class="order__label">
+                  <input
+                    class="order__checkbox checkbox"
+                    type="checkbox"
+                    value="vishnya"
+                    name="berry"
+                  />
+                  Вишня
+                </label>
+              </li>
+              <li class="order__item">
+                <label class="order__label">
+                  <input
+                    class="order__checkbox checkbox"
+                    type="checkbox"
+                    value="blueberry"
+                    name="berry"
+                  />
+                  Голубика
+                </label>
+              </li>
+              <li class="order__item">
+                <label class="order__label">
+                  <input
+                    class="order__checkbox checkbox"
+                    type="checkbox"
+                    value="ezhevika"
+                    name="berry"
+                  />
+                  Ежевика
+                </label>
+              </li>
+              <li class="order__item">
+                <label class="order__label">
+                  <input
+                    class="order__checkbox checkbox"
+                    type="checkbox"
+                    value="vishnya"
+                    name="berry"
+                  />
+                  Клубника
+                </label>
+              </li>
+              <li class="order__item">
+                <label class="order__label">
+                  <input
+                    class="order__checkbox checkbox"
+                    type="checkbox"
+                    value="vishnya"
+                    name="berry"
+                  />
+                  клюква
+                </label>
+              </li>
+              <li class="order__item">
+                <label class="order__label">
+                  <input
+                    class="order__checkbox checkbox"
+                    type="checkbox"
+                    value="vishnya"
+                    name="berry"
+                  />
+                  Крыжовник
+                </label>
+              </li>
+              <li class="order__item">
+                <label class="order__label">
+                  <input
+                    class="order__checkbox checkbox"
+                    type="checkbox"
+                    value="vishnya"
+                    name="berry"
+                  />
+                  Малина
+                </label>
+              </li>
+              <li class="order__item">
+                <label class="order__label">
+                  <input
+                    class="order__checkbox checkbox"
+                    type="checkbox"
+                    value="vishnya"
+                    name="berry"
+                    disabled
+                  />
+                  морошка
+                </label>
+              </li>
+              <li class="order__item">
+                <label class="order__label">
+                  <input
+                    class="order__checkbox checkbox"
+                    type="checkbox"
+                    value="vishnya"
+                    name="berry"
+                    disabled
+                  />
+                  черника
+                </label>
+              </li>
             </ul>
 
             <h3 class="order__caption">Вид хранения</h3>
             <ul class="order__list">
-              <li class="order__item">свежие ягоды</li>
-              <li class="order__item">замороженные ягоды</li>
-              <li class="order__item">ягодные миксы</li>
+              <li class="order__item">
+                <label class="order__label">
+                  <input
+                    class="order__checkbox checkbox"
+                    type="checkbox"
+                    value="freshBerry"
+                    name="storage"
+                  />
+                  Свежие ягоды
+                </label>
+              </li>
+              <li class="order__item">
+                <label class="order__label">
+                  <input
+                    class="order__checkbox checkbox"
+                    type="checkbox"
+                    value="coldBerry"
+                    name="storage"
+                  />
+                  замороженные ягоды
+                </label>
+              </li>
+              <li class="order__item">
+                <label class="order__label">
+                  <input
+                    class="order__checkbox checkbox"
+                    type="checkbox"
+                    value="mixBerry"
+                    name="storage"
+                  />
+                  ягодные миксы
+                </label>
+              </li>
             </ul>
 
             <h3 class="order__caption">Способ доставки</h3>
             <ul class="order__list">
-              <li class="order__item">Доставка (по СПБ в пределах КАД)</li>
               <li class="order__item">
-                Самовывоз (Набережная Обводного канала, 101)
+                <label class="order__label">
+                  <input
+                    class="order__radio-button radio-button"
+                    type="radio"
+                    value="delivery"
+                    name="shippingMethod"
+                    checked
+                  />
+                  Доставка<br />
+                  (по СПБ в пределах<br />КАД)
+                </label>
+              </li>
+              <li class="order__item">
+                <label class="order__label">
+                  <input
+                    class="order__radio-button radio-button"
+                    type="radio"
+                    value="pickup"
+                    name="shippingMethod"
+                  />
+                  Самовывоз<br />
+                  (Набережная Обводного канала, 101)
+                </label>
               </li>
             </ul>
 
             <h3 class="order__caption">Ваши контакты</h3>
             <ul class="order__list">
-              <li class="order__item">Имя</li>
-              <li class="order__item">Телефон</li>
-              <li class="order__item">Емэйл</li>
-              <li class="order__item">Адрес</li>
-              <li class="order__item">пожеланию к заазу</li>
+              <li class="order__item">
+                <label class="order__label" for="name">Имя <span>*</span></label
+                ><input
+                  class="order__input input"
+                  type="text"
+                  minlength="2"
+                  maxlength="16"
+                  name="name"
+                  id="name"
+                  placeholder="Как к вам обращаться?"
+                  required
+                />
+              </li>
+              <li class="order__item">
+                <label class="order__label" for="phone"
+                  >Телефон <span>*</span></label
+                ><input
+                  class="order__input input"
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="+7 xxx xxx xx xx"
+                  required
+                />
+              </li>
+              <li class="order__item">
+                <label class="order__label" for="email"
+                  >Email <span>*</span></label
+                ><input
+                  class="order__input input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Ваш email"
+                  required
+                />
+              </li>
+              <li class="order__item">
+                <label class="order__label" for="address"
+                  >Адрес <span>*</span></label
+                ><textarea
+                  class="order__input input"
+                  type="text"
+                  name="address"
+                  id="address"
+                  placeholder="Адрес в Санкт-Петербурге"
+                  required
+                ></textarea>
+              </li>
+              <li class="order__item">
+                <label class="order__label" for="comment"
+                  >Пожелания к заказу</label
+                ><textarea
+                  class="order__input input"
+                  type="text"
+                  name="comment"
+                  id="comment"
+                  placeholder="Чем мы можем вам помочь?"
+                ></textarea>
+              </li>
             </ul>
-            <button class="order__button button" type="submit">Заказать</button>
+            <button
+              class="order__button button button--big button--shadow"
+              type="submit"
+              value="submit"
+            >
+              Заказать
+            </button>
           </form>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts contacts--page-form">
         <div class="contacts__container">
           <img
             src="./images/double-stick.svg"
@@ -332,7 +548,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer footer--page-form">
       <div class="footer__container">
         <a class="footer__logo logo" href="index.html">
           <svg

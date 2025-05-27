@@ -1,0 +1,15 @@
+.input {
+  padding: 16px 12px;
+  border: 1px solid $accent-color-green;
+  border-radius: 20px;
+  width: 100%;
+
+  &:hover,
+  &:active {
+    border-color: $green-hover;
+  }
+
+  &:user-invalid {
+    border-color: $error-color;
+  }
+}
